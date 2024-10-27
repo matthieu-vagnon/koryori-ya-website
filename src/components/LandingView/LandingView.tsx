@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../ImgCarousel/ImgCarousel";
+import ImgCarousel from "../ImgCarousel/ImgCarousel";
 import "./LandingView.css";
 
 export default function LandingView() {
@@ -18,7 +18,7 @@ export default function LandingView() {
           </div>
         </div>
         <div className="carousel-background">
-          <Carousel
+          <ImgCarousel
             images={["japan.png", "paris.png", "new-york.png"]}
             slideSpeed={5000}
             noiseOpacity={0.6}
