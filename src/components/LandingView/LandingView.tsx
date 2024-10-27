@@ -19,7 +19,7 @@ export default function LandingView() {
             </div>
           </div>
         </div>
-        <div className="carousel-container">
+        <div className="carousel-background">
           <Carousel />
         </div>
       </div>
