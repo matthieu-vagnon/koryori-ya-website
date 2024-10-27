@@ -38,6 +38,19 @@ export default function Carousel() {
   return (
     <React.Fragment>
       <div className="carousel-container">
+        <div className="noise">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <filter id="noiseFilter">
+              <feTurbulence
+                baseFrequency="5"
+                numOctaves="1"
+                stitchTiles="stitch"
+              />
+            </filter>
+
+            <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+          </svg>
+        </div>
         <div
           className="carousel-img img-left"
           style={{
