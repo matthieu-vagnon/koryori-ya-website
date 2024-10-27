@@ -2,37 +2,29 @@ import React, { useEffect, useState } from "react";
 import "./Carousel.css";
 
 export default function Carousel() {
-  const images = [
-    {
-      title: "Sushiro 1",
-      src: "sushiro-1.jpg",
-    },
-    {
-      title: "Sushiro 2",
-      src: "sushiro-2.jpg",
-    },
-  ];
-  const [current, setCurrent] = useState(images.length - 1);
-
-  const getPrev = (image: number) => {
-    return image > 0 ? image - 1 : images.length - 1;
-  };
-  const getNext = (image: number) => {
-    return image < images.length - 1 ? image + 1 : 0;
-  };
+  const images = ["japan.jpg", "paris.jpg", "new-york.jpg"];
+  const [current, setCurrent] = useState(0);
+  const [img0, setImg0] = useState(images.length - 1);
+  const [img1, setImg1] = useState(0);
+  const [img2, setImg2] = useState(1 % images.length);
+  const setImgs = [setImg0, setImg1, setImg2];
 
   useEffect(() => {
     const imgElements = [
-      document.querySelector(".carousel-img.img0"),
-      document.querySelector(".carousel-img.img1"),
-      document.querySelector(".carousel-img.img2"),
+      document.querySelector(".carousel-img.img-left"),
+      document.querySelector(".carousel-img.img-center"),
+      document.querySelector(".carousel-img.img-right"),
     ];
 
     const slide = setTimeout(() => {
-      imgElements[0]?.classList.replace("img0", "img2");
-      imgElements[1]?.classList.replace("img1", "img0");
-      imgElements[2]?.classList.replace("img2", "img1");
-    }, 500);
+      imgElements[0]?.classList.replace("img-left", "img-right");
+      imgElements[1]?.classList.replace("img-center", "img-left");
+      imgElements[2]?.classList.replace("img-right", "img-center");
+      setImgs[current % imgElements.length](
+        (current + imgElements.length - 1) % images.length
+      );
+      setCurrent((prevState) => prevState + 1);
+    }, 5000);
 
     return () => {
       clearTimeout(slide);
@@ -43,21 +35,21 @@ export default function Carousel() {
     <React.Fragment>
       <div className="carousel-wrapper">
         <div
-          className="carousel-img img0"
+          className="carousel-img img-left"
           style={{
-            backgroundImage: `url(${images[images.length - 1].src})`,
+            backgroundImage: `url(${images[img0]})`,
           }}
         />
         <div
-          className="carousel-img img1"
+          className="carousel-img img-center"
           style={{
-            backgroundImage: `url(${images[0].src})`,
+            backgroundImage: `url(${images[img1]})`,
           }}
         />
         <div
-          className="carousel-img img2"
+          className="carousel-img img-right"
           style={{
-            backgroundImage: `url(${images[1].src})`,
+            backgroundImage: `url(${images[img2]})`,
           }}
         />
       </div>
