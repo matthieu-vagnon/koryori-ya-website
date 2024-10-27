@@ -10,11 +10,9 @@ export default function LandingView() {
           <div className="content">
             <img className="logo" src="logo.png" alt="Logo" />
             <div className="title">
-              <h1>Title</h1>
+              <h1>アヘャラヌアミ樹差樹擢ほも尾都津れし</h1>
               <p>
-                Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle
-                Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle
-                Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle
+                アヘャラヌアミ樹差樹擢ほも尾都津れし、やけうより、露等課夜、けてなくつやょ。以尾ほくや氏無らこふのつちまゆヨトフオヒョテま素差はせこしね素名そロンエカルかむせえ「や課雲みほゃ」。ろニヌアナコリ氏瀬他名区、えなろうよな区根模擢。いく譜露。
               </p>
             </div>
           </div>
