@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Carousel.css";
 
+// Sliding speed in ms
+const slideSpeed = 5000;
+// Images paths (minimum 2 images)
+const images = ["japan.png", "paris.png", "new-york.png"];
+
 export default function Carousel() {
-  const images = ["japan.jpg", "paris.jpg", "new-york.jpg"];
   const [current, setCurrent] = useState(0);
   const [img0, setImg0] = useState(images.length - 1);
   const [img1, setImg1] = useState(0);
@@ -24,7 +28,7 @@ export default function Carousel() {
         (current + imgElements.length - 1) % images.length
       );
       setCurrent((prevState) => prevState + 1);
-    }, 5000);
+    }, slideSpeed);
 
     return () => {
       clearTimeout(slide);
@@ -33,7 +37,7 @@ export default function Carousel() {
 
   return (
     <React.Fragment>
-      <div className="carousel-wrapper">
+      <div className="carousel-container">
         <div
           className="carousel-img img-left"
           style={{
