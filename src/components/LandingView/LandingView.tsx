@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../ImgCarousel/ImgCarousel";
 import "./LandingView.css";
 
 export default function LandingView() {
@@ -18,7 +18,11 @@ export default function LandingView() {
           </div>
         </div>
         <div className="carousel-background">
-          <Carousel />
+          <Carousel
+            images={["japan.png", "paris.png", "new-york.png"]}
+            slideSpeed={5000}
+            noiseOpacity={0.6}
+          />
         </div>
       </div>
     </React.Fragment>
