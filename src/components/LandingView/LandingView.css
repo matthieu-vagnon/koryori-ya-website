@@ -25,6 +25,9 @@
 .logo {
   height: 150px;
   object-fit: contain;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .title {
