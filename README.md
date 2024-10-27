@@ -1,8 +1,21 @@
+- [Project informations](#project-informations)
+  - [Tech stack](#tech-stack)
 - [Run the project](#run-the-project)
   - [Dependencies install/update](#dependencies-installupdate)
   - [Run the application](#run-the-application)
 - [Deployment](#deployment)
   - [Build the application](#build-the-application)
+
+# Project informations
+
+## Tech stack
+
+The web application was built using the following stacks:
+
+- React.js
+- TypeScript
+- Vite.js
+- React Router
 
 # Run the project
 
