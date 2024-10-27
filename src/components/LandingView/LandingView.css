@@ -1,0 +1,49 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  min-height: 500px;
+  position: relative;
+}
+
+.logo-container {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 175px;
+  height: 175px;
+  z-index: 2;
+  background-image: url(logo-background.png);
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 66%;
+  height: 66%;
+}
+
+.content {
+  position: absolute;
+  bottom: 75px;
+  width: 50%;
+  left: 0;
+  z-index: 2;
+  text-align: left;
+  padding: 0 75px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo-container {
+    height: 125px;
+    width: 125px;
+  }
+
+  .content {
+    width: auto;
+    bottom: 50px;
+    padding: 0 50px;
+  }
+}

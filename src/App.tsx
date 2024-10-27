@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
-import Carousel from "./components/Carousel/Carousel";
+import LandingView from "./components/LandingView/LandingView";
+import { useTitle } from "./contexts/TitleContext";
 
 function App() {
+  const { setTitle } = useTitle();
+
+  useEffect(() => {
+    setTitle("Home");
+  }, []);
+
   return (
     <React.Fragment>
-      <Carousel />
+      <LandingView />
     </React.Fragment>
   );
 }
