@@ -10,13 +10,13 @@
 
 ## Tech stack
 
-The web application was built using the following stacks:
+This web application was built using the following tools:
 
 - React.js
 - TypeScript
 - Vite.js
-- CSS
 - React Router
+- CSS
 
 # Run the project
 
