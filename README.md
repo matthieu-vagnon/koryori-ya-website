@@ -1,3 +1,6 @@
+# Table of contents
+
+- [Table of contents](#table-of-contents)
 - [Project informations](#project-informations)
   - [Tech stack](#tech-stack)
 - [Run the project](#run-the-project)
