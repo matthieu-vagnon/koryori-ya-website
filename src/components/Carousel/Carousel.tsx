@@ -12,7 +12,7 @@ export default function Carousel() {
       src: "sushiro-2.jpg",
     },
   ];
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(images.length - 1);
 
   const getPrev = (image: number) => {
     return image > 0 ? image - 1 : images.length - 1;
@@ -22,14 +22,17 @@ export default function Carousel() {
   };
 
   useEffect(() => {
-    const prevImg = document.querySelector(".carousel-img.prev");
-    const currentImg = document.querySelector(".carousel-img.current");
-    const nextImg = document.querySelector(".carousel-img.next");
+    const imgElements = [
+      document.querySelector(".carousel-img.img0"),
+      document.querySelector(".carousel-img.img1"),
+      document.querySelector(".carousel-img.img2"),
+    ];
+
     const slide = setTimeout(() => {
-      nextImg?.classList.replace("next", "current");
-      currentImg?.classList.replace("current", "prev");
-      prevImg?.classList.replace("prev", "next");
-    }, 100);
+      imgElements[0]?.classList.replace("img0", "img2");
+      imgElements[1]?.classList.replace("img1", "img0");
+      imgElements[2]?.classList.replace("img2", "img1");
+    }, 500);
 
     return () => {
       clearTimeout(slide);
@@ -39,21 +42,24 @@ export default function Carousel() {
   return (
     <React.Fragment>
       <div className="carousel-wrapper">
-        <div className="carousel-img prev">
-          <img
-            src={images[getPrev(current)].src}
-            alt={images[getPrev(current)].title}
-          />
-        </div>
-        <div className="carousel-img current">
-          <img src={images[current].src} alt={images[current].title} />
-        </div>
-        <div className="carousel-img next">
-          <img
-            src={images[getNext(current)].src}
-            alt={images[getNext(current)].title}
-          />
-        </div>
+        <div
+          className="carousel-img img0"
+          style={{
+            backgroundImage: `url(${images[images.length - 1].src})`,
+          }}
+        />
+        <div
+          className="carousel-img img1"
+          style={{
+            backgroundImage: `url(${images[0].src})`,
+          }}
+        />
+        <div
+          className="carousel-img img2"
+          style={{
+            backgroundImage: `url(${images[1].src})`,
+          }}
+        />
       </div>
     </React.Fragment>
   );

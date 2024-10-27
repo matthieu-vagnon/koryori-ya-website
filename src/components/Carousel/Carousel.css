@@ -9,30 +9,29 @@
 .carousel-img {
   height: 100%;
   position: absolute;
-  transition: width 2s cubic-bezier(0.09, 1, 0, 1);
   overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.carousel-img > img {
+.carousel-img {
   width: 100vw;
   height: 100%;
-  object-fit: cover;
-}
-.carousel-img.prev {
   top: 0;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-img.img0 {
   left: 0;
-  z-index: 1;
   width: 0;
+  transition: width 2s cubic-bezier(0.09, 1, 0, 1);
 }
-.carousel-img.current {
-  top: 0;
+.carousel-img.img1 {
   right: 0;
   width: 100%;
+  transition: width 2s cubic-bezier(0.09, 1, 0, 1);
 }
-.carousel-img.next {
-  top: 0;
+.carousel-img.img2 {
   right: 0;
   width: 0;
 }
