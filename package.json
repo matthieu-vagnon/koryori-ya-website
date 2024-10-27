@@ -1,5 +1,8 @@
 {
   "name": "website",
+  "title": "Website",
+  "client": "Koryori Ya",
+  "author": "M. Vagnon",
   "private": true,
   "version": "0.0.0",
   "type": "module",

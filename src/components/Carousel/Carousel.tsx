@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Carousel.css";
 
 export default function Carousel() {
-  const [active, setActive] = useState(0);
   const images = [
     {
       title: "Sushiro 1",
@@ -13,27 +12,48 @@ export default function Carousel() {
       src: "sushiro-2.jpg",
     },
   ];
+  const [current, setCurrent] = useState(0);
+
+  const getPrev = (image: number) => {
+    return image > 0 ? image - 1 : images.length - 1;
+  };
+  const getNext = (image: number) => {
+    return image < images.length - 1 ? image + 1 : 0;
+  };
 
   useEffect(() => {
-    const autoSlide = setTimeout(() => {
-      setActive((prevState) =>
-        prevState < images.length - 1 ? prevState + 1 : 0
-      );
-    }, 5000);
+    const prevImg = document.querySelector(".carousel-img.prev");
+    const currentImg = document.querySelector(".carousel-img.current");
+    const nextImg = document.querySelector(".carousel-img.next");
+    const slide = setTimeout(() => {
+      nextImg?.classList.replace("next", "current");
+      currentImg?.classList.replace("current", "prev");
+      prevImg?.classList.replace("prev", "next");
+    }, 100);
 
     return () => {
-      clearTimeout(autoSlide);
+      clearTimeout(slide);
     };
-  }, [active]);
+  }, [current]);
 
   return (
     <React.Fragment>
       <div className="carousel-wrapper">
-        <img
-          className="carousel-img"
-          src={images[active].src}
-          alt={images[active].title}
-        />
+        <div className="carousel-img prev">
+          <img
+            src={images[getPrev(current)].src}
+            alt={images[getPrev(current)].title}
+          />
+        </div>
+        <div className="carousel-img current">
+          <img src={images[current].src} alt={images[current].title} />
+        </div>
+        <div className="carousel-img next">
+          <img
+            src={images[getNext(current)].src}
+            alt={images[getNext(current)].title}
+          />
+        </div>
       </div>
     </React.Fragment>
   );
