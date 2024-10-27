@@ -75,6 +75,9 @@
   .title {
     max-width: unset;
   }
+  .title > h1 {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 900px) {
   .title {

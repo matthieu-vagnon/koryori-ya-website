@@ -13,6 +13,7 @@ function App() {
   return (
     <React.Fragment>
       <LandingView />
+      <div className="page-container"></div>
     </React.Fragment>
   );
 }
