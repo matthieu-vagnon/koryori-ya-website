@@ -15,6 +15,7 @@ The web application was built using the following stacks:
 - React.js
 - TypeScript
 - Vite.js
+- CSS
 - React Router
 
 # Run the project
