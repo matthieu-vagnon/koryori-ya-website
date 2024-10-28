@@ -1,3 +1,0 @@
-[submodule "img-carousel"]
-	path = src/components/ImgCarousel
-	url = https://github.com/matthieu-vagnon/img-carousel.git
