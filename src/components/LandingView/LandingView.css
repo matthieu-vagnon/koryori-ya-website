@@ -1,12 +1,10 @@
-.container {
-  height: 100vh;
-  min-height: 600px;
+.landing-view-container {
+  position: relative;
 }
 
 .content-container {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .content {

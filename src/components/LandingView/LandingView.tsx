@@ -5,7 +5,7 @@ import "./LandingView.css";
 export default function LandingView() {
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="landing-view-container full-screen-container">
         <div className="content-container">
           <div className="content boxed">
             <img className="logo" src="logo.png" alt="Logo" />

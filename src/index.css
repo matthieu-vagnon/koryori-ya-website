@@ -12,7 +12,13 @@
 }
 
 :root {
+  --background-color: white;
+  --background-color-secondary: rgb(255, 253, 245);
+  --color: rgb(90, 90, 90);
+  --color-secondary: rgb(90, 90, 90);
+
   font-family: Noto Sans JP, Noto Serif JP;
+  color: var(--color);
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -25,6 +31,7 @@ body {
   margin: 0;
   min-width: 260px;
   min-height: 100vh;
+  background-color: var(--background-color);
 }
 
 body * {
@@ -32,7 +39,8 @@ body * {
 }
 
 .boxed {
-  padding: 0 100px;
+  padding-left: 100px;
+  padding-right: 100px;
   max-width: 2000px;
 }
 
@@ -51,6 +59,16 @@ h1 {
 
 .page-container {
   max-width: 2000px;
+}
+
+.serif {
+  font-family: Noto Serif JP, Noto Sans JP;
+}
+
+.full-screen-container {
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {

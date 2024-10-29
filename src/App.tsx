@@ -13,12 +13,8 @@ function App() {
 
   return (
     <React.Fragment>
-      <div className="landing-view-container">
-        <LandingView />
-      </div>
-      <div className="page-container">
-        <DualSection />
-      </div>
+      <LandingView />
+      <DualSection imgUrl="japan.png" />
     </React.Fragment>
   );
 }
