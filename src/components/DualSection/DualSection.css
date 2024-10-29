@@ -2,10 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  background-color: var(--background-color-secondary);
+  background-color: var(--background-color);
   color: var(--color-secondary);
   align-items: center;
   justify-content: center;
+}
+.dual-section-container.secondary {
+  background-color: var(--background-color-secondary);
 }
 
 .dual-section-element {

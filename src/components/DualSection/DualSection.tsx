@@ -6,18 +6,28 @@ interface DualSectionProps {
   content: ReactNode;
   imgUrl: string;
   imageOnLeft?: boolean;
+  secondaryBackground?: boolean;
   callToAction?: {
     name: string;
     onClick: () => void;
   };
 }
 export default function DualSection(props: DualSectionProps) {
-  const { title, content, imgUrl, imageOnLeft, callToAction } = props;
+  const {
+    title,
+    content,
+    imgUrl,
+    imageOnLeft,
+    secondaryBackground,
+    callToAction,
+  } = props;
 
   return (
     <React.Fragment>
       <div
-        className="dual-section-container full-screen-container"
+        className={`dual-section-container full-screen-container ${
+          secondaryBackground ? "secondary" : ""
+        }`}
         style={{
           flexDirection: !imageOnLeft ? "row-reverse" : "row",
         }}
