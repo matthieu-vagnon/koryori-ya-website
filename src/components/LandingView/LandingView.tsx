@@ -7,7 +7,7 @@ export default function LandingView() {
     <React.Fragment>
       <div className="container">
         <div className="content-container">
-          <div className="content">
+          <div className="content boxed">
             <img className="logo" src="logo.png" alt="Logo" />
             <div className="title">
               <h1>アヘャラヌアミ樹差樹擢ほも尾都津れし</h1>

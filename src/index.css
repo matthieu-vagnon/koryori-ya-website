@@ -22,11 +22,18 @@
 }
 
 body {
-  padding: 0 100px;
   margin: 0;
-  position: relative;
   min-width: 260px;
   min-height: 100vh;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.boxed {
+  padding: 0 100px;
+  max-width: 2000px;
 }
 
 h1,
@@ -51,7 +58,7 @@ h1 {
     font-size: 0.75rem;
   }
 
-  body {
-    padding: 0 30px;
+  .boxed {
+    padding: 0 50px;
   }
 }

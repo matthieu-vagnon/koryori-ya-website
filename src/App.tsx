@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
+import DualSection from "./components/DualSection/DualSection";
 import LandingView from "./components/LandingView/LandingView";
 import { useTitle } from "./contexts/TitleContext";
 
@@ -12,8 +13,12 @@ function App() {
 
   return (
     <React.Fragment>
-      <LandingView />
-      <div className="page-container"></div>
+      <div className="landing-view-container">
+        <LandingView />
+      </div>
+      <div className="page-container">
+        <DualSection />
+      </div>
     </React.Fragment>
   );
 }
