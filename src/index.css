@@ -42,6 +42,10 @@ h1 {
   line-height: 1.1;
 }
 
+.page-container {
+  max-width: 2000px;
+}
+
 @media screen and (max-width: 600px) {
   :root {
     font-size: 0.75rem;
