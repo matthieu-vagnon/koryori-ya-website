@@ -8,7 +8,7 @@ export default function LandingView() {
       <div className="landing-view-container full-screen-container">
         <div className="content-container">
           <div className="content boxed">
-            <img className="logo" src="logo.png" alt="Logo" />
+            <img className="logo" src="/logo.png" alt="Logo" />
             <div className="title">
               <h1>アヘャラヌアミ樹差樹擢ほも尾都津れし</h1>
               <p>
@@ -19,9 +19,8 @@ export default function LandingView() {
         </div>
         <div className="carousel-background">
           <ImgCarousel
-            images={["japan.png", "paris.png", "new-york.png"]}
+            images={["/japan.png", "/paris.png", "/new-york.png"]}
             slideSpeed={5000}
-            noiseOpacity={0.6}
           />
         </div>
       </div>

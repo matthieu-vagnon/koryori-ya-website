@@ -3,33 +3,25 @@ import "./DualSection.css";
 
 interface DualSectionProps {
   title: string;
-  content: ReactNode;
   imgUrl: string;
-  imageOnLeft?: boolean;
+  background: "primary" | "secondary";
+  mirror?: boolean;
   secondaryBackground?: boolean;
   callToAction?: {
     name: string;
     onClick: () => void;
   };
+  children: ReactNode;
 }
 export default function DualSection(props: DualSectionProps) {
-  const {
-    title,
-    content,
-    imgUrl,
-    imageOnLeft,
-    secondaryBackground,
-    callToAction,
-  } = props;
+  const { title, imgUrl, background, mirror, callToAction, children } = props;
 
   return (
     <React.Fragment>
       <div
-        className={`dual-section-container full-screen-container ${
-          secondaryBackground ? "secondary" : ""
-        }`}
+        className={`dual-section-container full-screen-container ${background}`}
         style={{
-          flexDirection: !imageOnLeft ? "row-reverse" : "row",
+          flexDirection: mirror ? "row-reverse" : "row",
         }}
       >
         <img
@@ -39,7 +31,7 @@ export default function DualSection(props: DualSectionProps) {
         />
         <div className="dual-section-element text-container boxed serif">
           <div className="text-title">{title}</div>
-          <div className="text-content">{content}</div>
+          <div className="text-content">{children}</div>
           {callToAction && (
             <div className="call-to-action">
               <button className="button" onClick={callToAction?.onClick}>

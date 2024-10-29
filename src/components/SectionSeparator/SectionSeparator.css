@@ -1,19 +1,16 @@
-.section-separator-element {
+.section-separator-container {
   height: 125px;
   width: 100%;
 }
 
-.section-separator-element .background {
-  fill: var(--background-color);
+.section-separator > .start {
   z-index: -1;
 }
-.section-separator-element.mirror .background {
-  fill: var(--background-color-secondary);
+
+.section-separator > .primary {
+  fill: var(--background-color);
 }
 
-.section-separator-element .element {
+.section-separator > .secondary {
   fill: var(--background-color-secondary);
-}
-.section-separator-element.mirror .element {
-  fill: var(--background-color);
 }

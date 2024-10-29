@@ -86,10 +86,10 @@ h1 {
   color: var(--color);
 }
 .button:hover {
-  opacity: 0.5;
+  opacity: 0.66;
 }
 .button:active {
-  transform: translateY(2px);
+  opacity: 0.33;
 }
 /* #endregion */
 

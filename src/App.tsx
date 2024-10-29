@@ -15,40 +15,39 @@ function App() {
   return (
     <React.Fragment>
       <LandingView />
-      <SectionSeparator />
+      <SectionSeparator start="primary" end="secondary" />
       <DualSection
         title="- Concept -"
-        content={
-          <span>
-            アヘャラヌアミ樹差樹擢ほも尾都津れし、
-            <br />
-            やけうより、露等課夜、けてなくつやょ。
-          </span>
-        }
-        imageOnLeft
-        imgUrl="japan.png"
-        secondaryBackground
+        imgUrl="/japan.png"
+        background="secondary"
         callToAction={{
           name: "Read more",
           onClick: () => {},
         }}
-      />
-      <SectionSeparator mirror />
+      >
+        <span>
+          アヘャラヌアミ樹差樹擢ほも尾都津れし、
+          <br />
+          やけうより、露等課夜、けてなくつやょ。
+        </span>
+      </DualSection>
+      <SectionSeparator start="secondary" end="primary" />
       <DualSection
         title="- Access -"
-        content={
-          <span>
-            アヘャラヌアミ樹差樹擢ほも尾都津れし、
-            <br />
-            やけうより、露等課夜、けてなくつやょ。
-          </span>
-        }
-        imgUrl="paris.png"
+        imgUrl="/paris.png"
+        background="primary"
+        mirror
         callToAction={{
           name: "Read more",
           onClick: () => {},
         }}
-      />
+      >
+        <span>
+          アヘャラヌアミ樹差樹擢ほも尾都津れし、
+          <br />
+          やけうより、露等課夜、けてなくつやょ。
+        </span>
+      </DualSection>
     </React.Fragment>
   );
 }
