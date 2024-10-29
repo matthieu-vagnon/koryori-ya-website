@@ -14,7 +14,22 @@ function App() {
   return (
     <React.Fragment>
       <LandingView />
-      <DualSection imgUrl="japan.png" />
+      <DualSection
+        title="- Concept -"
+        content={
+          <span>
+            アヘャラヌアミ樹差樹擢ほも尾都津れし、
+            <br />
+            やけうより、露等課夜、けてなくつやょ。
+          </span>
+        }
+        imageOnLeft
+        imgUrl="japan.png"
+        callToAction={{
+          name: "Read more",
+          onClick: () => {},
+        }}
+      />
     </React.Fragment>
   );
 }

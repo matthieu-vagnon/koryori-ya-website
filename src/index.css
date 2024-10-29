@@ -10,14 +10,20 @@
   font-weight: 100 900;
   font-style: normal;
 }
+@font-face {
+  font-family: "Cormorant Infant";
+  src: url("cormorant-infant.ttf") format("truetype-variations");
+  font-weight: 200;
+  font-style: normal;
+}
 
 :root {
-  --background-color: white;
+  --background-color: rgb(230, 230, 230);
   --background-color-secondary: rgb(255, 253, 245);
   --color: rgb(90, 90, 90);
   --color-secondary: rgb(90, 90, 90);
 
-  font-family: Noto Sans JP, Noto Serif JP;
+  font-family: Noto Sans JP, Noto Serif JP, Cormorant Infant;
   color: var(--color);
   line-height: 1.5;
   font-weight: 400;
@@ -38,12 +44,6 @@ body * {
   box-sizing: border-box;
 }
 
-.boxed {
-  padding-left: 100px;
-  padding-right: 100px;
-  max-width: 2000px;
-}
-
 h1,
 h2,
 h3,
@@ -57,26 +57,55 @@ h1 {
   line-height: 1.1;
 }
 
-.page-container {
+/* #region Global classes */
+.boxed {
+  padding-left: 100px;
+  padding-right: 100px;
   max-width: 2000px;
 }
 
 .serif {
-  font-family: Noto Serif JP, Noto Sans JP;
+  font-family: Cormorant Infant, Noto Serif JP, Noto Sans JP;
 }
 
 .full-screen-container {
   height: 100vh;
-  min-height: 600px;
+  min-height: 800px;
   width: 100%;
 }
+
+.button {
+  border: none;
+  border-bottom: 1px solid var(--color);
+  background-color: unset;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 200;
+  cursor: pointer;
+  font-size: 15px;
+}
+.button:hover {
+  background-color: var(--color);
+  color: var(--background-color);
+}
+.button:active {
+  transform: translateY(5px);
+}
+/* #endregion */
 
 @media screen and (max-width: 600px) {
   :root {
     font-size: 0.75rem;
   }
 
+  /* #region Global classes */
   .boxed {
     padding: 0 50px;
   }
+
+  .full-screen-container {
+    min-height: 600px;
+  }
+  /* #endregion */
 }
