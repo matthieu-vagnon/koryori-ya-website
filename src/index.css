@@ -70,7 +70,7 @@ h1 {
 
 .full-screen-container {
   height: 100vh;
-  min-height: 800px;
+  min-height: 600px;
   width: 100%;
 }
 
@@ -83,6 +83,7 @@ h1 {
   font-weight: 200;
   cursor: pointer;
   font-size: 15px;
+  color: var(--color);
 }
 .button:hover {
   opacity: 0.5;
@@ -103,7 +104,7 @@ h1 {
   }
 
   .full-screen-container {
-    min-height: 600px;
+    min-height: 400px;
   }
   /* #endregion */
 }

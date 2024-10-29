@@ -43,7 +43,6 @@ function App() {
             やけうより、露等課夜、けてなくつやょ。
           </span>
         }
-        imageOnLeft
         imgUrl="paris.png"
         callToAction={{
           name: "Read more",
