@@ -1,17 +1,17 @@
-# Table of contents
+# Table of Contents
 
-- [Table of contents](#table-of-contents)
-- [Project informations](#project-informations)
-  - [Tech stack](#tech-stack)
-- [Run the project](#run-the-project)
-  - [Dependencies install/update](#dependencies-installupdate)
-  - [Run the application](#run-the-application)
+- [Table of Contents](#table-of-contents)
+- [Project Informations](#project-informations)
+  - [Tech Stack](#tech-stack)
+- [Run the Project](#run-the-project)
+  - [Dependencies Install/Update](#dependencies-installupdate)
+  - [Run the Application](#run-the-application)
 - [Deployment](#deployment)
-  - [Build the application](#build-the-application)
+  - [Build the Application](#build-the-application)
 
-# Project informations
+# Project Informations
 
-## Tech stack
+## Tech Stack
 
 This web application was built using the following tools:
 
@@ -21,9 +21,9 @@ This web application was built using the following tools:
 - React Router
 - CSS
 
-# Run the project
+# Run the Project
 
-## Dependencies install/update
+## Dependencies Install/Update
 
 Run the following command:
 
@@ -31,7 +31,7 @@ Run the following command:
 npm install
 ```
 
-## Run the application
+## Run the Application
 
 Run the following command:
 
@@ -43,7 +43,7 @@ The application will be available at [localhost:3000](http://localhost:3000).
 
 # Deployment
 
-## Build the application
+## Build the Application
 
 Run the following command:
 
