@@ -100,7 +100,8 @@ h1 {
 
   /* #region Global classes */
   .boxed {
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .full-screen-container {
