@@ -1,0 +1,26 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 50px;
+  padding-top: 25px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-basis: 250px;
+}
+
+.second-section {
+  flex-basis: 500px;
+}
+
+.footer-logo {
+  height: 150px;
+  width: auto;
+}

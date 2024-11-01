@@ -50,6 +50,18 @@ h1 {
   line-height: 1.1;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+  transition: opacity 0.2s ease-in-out;
+}
+a:hover {
+  opacity: 0.66;
+}
+a:active {
+  opacity: 0.33;
+}
+
 /* #region Global classes */
 .boxed {
   padding-left: 100px;

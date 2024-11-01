@@ -50,7 +50,7 @@ function App() {
         </span>
       </DualSection>
       <SectionSeparator start="primary" end="secondary" />
-      <Footer background="primary" />
+      <Footer background="secondary" />
     </React.Fragment>
   );
 }
