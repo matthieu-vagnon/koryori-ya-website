@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import DualSection from "./components/DualSection/DualSection";
+import Footer from "./components/Footer/Footer";
 import LandingView from "./components/LandingView/LandingView";
 import SectionSeparator from "./components/SectionSeparator/SectionSeparator";
 import { useTitle } from "./contexts/TitleContext";
@@ -48,6 +49,8 @@ function App() {
           やけうより、露等課夜、けてなくつやょ。
         </span>
       </DualSection>
+      <SectionSeparator start="primary" end="secondary" />
+      <Footer background="primary" />
     </React.Fragment>
   );
 }

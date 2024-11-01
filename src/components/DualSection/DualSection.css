@@ -2,15 +2,8 @@
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  color: var(--color-secondary);
   align-items: center;
   justify-content: center;
-}
-.dual-section-container.primary {
-  background-color: var(--background-color);
-}
-.dual-section-container.secondary {
-  background-color: var(--background-color-secondary);
 }
 
 .dual-section-element {

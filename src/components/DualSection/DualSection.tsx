@@ -34,7 +34,10 @@ export default function DualSection(props: DualSectionProps) {
           <div className="text-content">{children}</div>
           {callToAction && (
             <div className="call-to-action">
-              <button className="button" onClick={callToAction?.onClick}>
+              <button
+                className={`button ${background}`}
+                onClick={callToAction?.onClick}
+              >
                 {callToAction.name}
               </button>
             </div>

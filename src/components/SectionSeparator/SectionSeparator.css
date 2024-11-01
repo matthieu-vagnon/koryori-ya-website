@@ -6,11 +6,3 @@
 .section-separator > .start {
   z-index: -1;
 }
-
-.section-separator > .primary {
-  fill: var(--background-color);
-}
-
-.section-separator > .secondary {
-  fill: var(--background-color-secondary);
-}

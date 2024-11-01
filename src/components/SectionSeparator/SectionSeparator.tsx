@@ -21,8 +21,8 @@ export default function SectionSeparator(props: SectionSeparatorProps) {
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect className={`start ${start}`} width="600" height="100" />
-          <path className={end} d="M0 20L600 80H0V0Z" />
-          <rect className={end} y="80" width="600" height="20" />
+          <path className={`${end}`} d="M0 20L600 80H0V0Z" />
+          <rect className={`${end}`} y="80" width="600" height="20" />
         </svg>
       </div>
     </React.Fragment>
