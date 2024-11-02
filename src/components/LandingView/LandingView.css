@@ -1,13 +1,13 @@
-.landing-view-container {
+.landing-view {
   position: relative;
 }
 
-.content-container {
+.landing-view-content-container {
   height: 100%;
   width: 100%;
 }
 
-.content {
+.landing-view-content {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-.logo {
+.landing-view-logo {
   height: 150px;
   object-fit: contain;
   user-select: none;
@@ -28,23 +28,19 @@
   -webkit-user-select: none;
 }
 
-.title {
+.landing-view-title {
   max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: 15px;
   overflow: hidden;
 }
-.title > * {
+
+.landing-view-description {
   font-weight: 200;
-  line-height: 1.5em;
-}
-.title > h1 {
-  font-size: 40px;
-  letter-spacing: 0.2em;
 }
 
-.carousel-background {
+.landing-view-carousel {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -52,7 +48,7 @@
   left: 0;
   pointer-events: none;
 }
-.carousel-background::before {
+.landing-view-carousel::before {
   content: "";
   height: 100%;
   width: 100%;
@@ -69,19 +65,21 @@
 }
 
 @media screen and (max-width: 600px) {
-  .logo {
+  .landing-view-logo {
     height: 125px;
   }
 
-  .title {
+  .landing-view-title {
     max-width: unset;
   }
-  .title > h1 {
+
+  .landing-view-title > h1 {
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 900px) {
-  .title {
+  .landing-view-title {
     max-width: 100%;
   }
 }

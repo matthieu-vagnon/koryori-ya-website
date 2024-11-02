@@ -3,6 +3,11 @@
   width: 100%;
 }
 
-.section-separator > .start {
+.section-separator-start {
   z-index: -1;
+  fill: var(--background-color);
+}
+
+.section-separator-end {
+  fill: var(--background-color);
 }
