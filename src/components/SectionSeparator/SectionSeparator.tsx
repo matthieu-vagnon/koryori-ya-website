@@ -1,10 +1,10 @@
 import React from "react";
+import { Variant } from "../../shared/types/Variant";
 import "./SectionSeparator.css";
 
-type color = "primary" | "secondary";
 interface SectionSeparatorProps {
-  start: color;
-  end: color;
+  start: Variant;
+  end: Variant;
 }
 export default function SectionSeparator(props: SectionSeparatorProps) {
   const { start, end } = props;

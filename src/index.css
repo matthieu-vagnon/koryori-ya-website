@@ -32,6 +32,18 @@
 }
 /* #endregion */
 
+/* #region Variants */
+.primary {
+  --background-color: rgb(242, 242, 242);
+  --color: rgb(90, 90, 90);
+}
+
+.secondary {
+  --background-color: rgb(255, 253, 245);
+  --color: rgb(90, 90, 90);
+}
+/* #endregion */
+
 :root {
   font-family: Raleway, Noto Sans JP, Cormorant Infant, Noto Serif JP;
   line-height: 1.5;
@@ -92,16 +104,6 @@ a:active {
   padding-left: 100px;
   padding-right: 100px;
   max-width: 2000px;
-}
-
-.primary {
-  --background-color: rgb(242, 242, 242);
-  --color: rgb(90, 90, 90);
-}
-
-.secondary {
-  --background-color: rgb(255, 253, 245);
-  --color: rgb(90, 90, 90);
 }
 
 .full-screen-container {

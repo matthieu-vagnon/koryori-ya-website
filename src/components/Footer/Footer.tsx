@@ -1,8 +1,9 @@
 import React from "react";
+import { Variant } from "../../shared/types/Variant";
 import "./Footer.css";
 
 interface FooterProps {
-  background: "primary" | "secondary";
+  background: Variant;
 }
 export default function Footer(props: FooterProps) {
   const { background } = props;

@@ -1,10 +1,11 @@
 import React, { ReactNode } from "react";
+import { Variant } from "../../shared/types/Variant";
 import "./DualSection.css";
 
 interface DualSectionProps {
   title: string;
   imgUrl: string;
-  background: "primary" | "secondary";
+  background: Variant;
   mirror?: boolean;
   secondaryBackground?: boolean;
   callToAction?: {
