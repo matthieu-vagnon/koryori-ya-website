@@ -18,20 +18,20 @@ function App() {
       <LandingView
         mainTitle="アヘャラヌアミ樹差樹擢ほも尾都津れし"
         subTitle="アヘャラヌアミ樹差樹擢ほも尾都津れし、やけうより、露等課夜、けてなくつやょ。以尾ほくや氏無らこふのつちまゆヨトフオヒョテま素差はせこしね素名そロンエカルかむせえ「や課雲みほゃ」。ろニヌアナコリ氏瀬他名区、えなろうよな区根模擢。いく譜露。"
-        carouselImages={["/japan.png", "/paris.png", "/new-york.png"]}
+        carouselImages={["/japan.jpg", "/paris.jpg", "/new-york.jpg"]}
       />
       <SectionSeparator start="primary" end="secondary" />
       <DualSection
         title="Concept"
         description="アヘャラヌアミ樹差樹擢ほも尾都津れし、やけうより、露等課夜、けてなくつやょ。"
-        img={{ url: "/japan.png", alt: "Japan Image" }}
+        img={{ url: "/japan.jpg", alt: "Japan Image" }}
         background="secondary"
       />
       <SectionSeparator start="secondary" end="primary" />
       <DualSection
         title="Access"
         description="アヘャラヌアミ樹差樹擢ほも尾都津れし、やけうより、露等課夜、けてなくつやょ。"
-        img={{ url: "/paris.png", alt: "Paris Image" }}
+        img={{ url: "/paris.jpg", alt: "Paris Image" }}
         background="primary"
         mirror
       >
