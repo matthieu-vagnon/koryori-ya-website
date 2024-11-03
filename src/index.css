@@ -15,39 +15,7 @@
 }
 /* #endregion */
 
-/* #region Font faces */
-@font-face {
-  font-family: "Noto Serif";
-  src: url("./assets/fonts/noto-serif-jp-variable.ttf")
-    format("truetype-variations");
-  font-weight: 100 900;
-}
-
-@font-face {
-  font-family: "Noto Sans JP";
-  src: url("./assets/fonts/noto-sans-jp-variable.ttf")
-    format("truetype-variations");
-  font-weight: 100 900;
-  font-style: normal;
-  unicode-range: U+3000-9FFF, U+ff??;
-}
-
-@font-face {
-  font-family: "Cormorant Infant";
-  src: url("./assets/fonts/cormorant-infant.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  unicode-range: U+000-5FF;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("./assets/fonts/raleway-variable.ttf") format("truetype-variations");
-  font-weight: 100 900;
-  font-style: normal;
-  unicode-range: U+000-5FF;
-}
-/* #endregion */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   font-family: Raleway, Noto Sans JP, Cormorant Infant, Noto Serif JP;
@@ -70,8 +38,8 @@ body {
 }
 
 h1 {
-  /* font-family: Cormorant Infant, Noto Serif, Raleway, Noto Sans JP, serif; */
-  font-family: "Noto Serif", serif;
+  font-family: "Noto Serif", "Noto Serif JP", serif, "Noto Sans", "Noto Sans JP",
+    sans-serif;
   font-size: clamp(40px, 50px, 7vmin);
   letter-spacing: 0.2em;
   font-weight: 200;
