@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./App.css";
+import japan from "./assets/images/japan.jpg";
+import newYork from "./assets/images/new-york.jpg";
+import paris from "./assets/images/paris.jpg";
 import DualSection from "./components/DualSection/DualSection";
 import Footer from "./components/Footer/Footer";
 import LandingView from "./components/LandingView/LandingView";
 import SectionSeparator from "./components/SectionSeparator/SectionSeparator";
 import { useTitle } from "./contexts/TitleContext";
-import japan from "/japan.jpg";
-import newYork from "/new-york.jpg";
-import paris from "/paris.jpg";
 
 function App() {
   const { setTitle } = useTitle();
