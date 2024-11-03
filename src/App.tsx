@@ -51,7 +51,7 @@ function App() {
         ]}
         about={
           <span>
-            Made with ♥ by{" "}
+            Made by{" "}
             <a href="https://www.mvagnon.dev" target="_blank" rel="noreferrer">
               Matthieu Vagnon
             </a>
