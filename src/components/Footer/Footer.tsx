@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import logo from "../../assets/images/logo.jpg";
 import { Variant } from "../../shared/types/Variant";
 import "./Footer.css";
 
@@ -16,7 +17,7 @@ export default function Footer(props: FooterProps) {
       <div className={`footer-container ${background}`}>
         <div className="footer boxed">
           <div className="footer-section">
-            <img className="footer-logo" src="/logo.jpg" alt="Logo" />
+            <img className="footer-logo" src={logo} alt="Logo" />
           </div>
           <div className="footer-section footer-section-access">
             <h6>Access</h6>

@@ -5,7 +5,7 @@ import "./DualSection.css";
 interface DualSectionProps {
   title: string;
   description: string;
-  img: { url: string; alt: string };
+  img: { src: string; alt: string };
   background: Variant;
   mirror?: boolean;
   children?: ReactNode;
@@ -28,7 +28,7 @@ export default function DualSection(props: DualSectionProps) {
         >
           <img
             className="dual-section-element dual-section-image"
-            src={img.url}
+            src={img.src}
             alt={img.alt}
           />
           <div className="dual-section-element dual-section-content">
