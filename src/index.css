@@ -107,7 +107,7 @@ a {
 }
 
 .pp {
-  font-size: clamp(25px, 30px, 5vmin);
+  font-size: clamp(20px, 30px, 5vmin);
   font-family: Cormorant Infant, Noto Serif JP, Raleway, Noto Sans JP;
   letter-spacing: 0.2em;
   font-weight: 200;
@@ -132,7 +132,7 @@ a {
   transition: all 0.2s ease-in-out;
   font-weight: 300;
   cursor: pointer;
-  font-size: 15px;
+  font-size: clamp(15px, 20px, 4vmin);
   border-bottom: 1px solid;
   font-family: Raleway, Noto Sans JP, Cormorant Infant, Noto Serif JP;
   &:hover {
