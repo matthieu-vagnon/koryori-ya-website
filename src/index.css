@@ -1,3 +1,15 @@
+/* #region Vars */
+.primary {
+  --background-color: rgb(242, 242, 242);
+  --color: rgb(90, 90, 90);
+}
+
+.secondary {
+  --background-color: rgb(255, 253, 245);
+  --color: rgb(90, 90, 90);
+}
+/* #endregion */
+
 /* #region Font faces */
 @font-face {
   font-family: "Noto Serif JP";
@@ -29,18 +41,6 @@
   font-weight: 100 900;
   font-style: normal;
   unicode-range: U+000-5FF;
-}
-/* #endregion */
-
-/* #region Variants */
-.primary {
-  --background-color: rgb(242, 242, 242);
-  --color: rgb(90, 90, 90);
-}
-
-.secondary {
-  --background-color: rgb(255, 253, 245);
-  --color: rgb(90, 90, 90);
 }
 /* #endregion */
 
@@ -92,12 +92,12 @@ a {
   text-decoration: none;
   color: unset;
   transition: opacity 0.2s ease-in-out;
-}
-a:hover {
-  opacity: 0.66;
-}
-a:active {
-  opacity: 0.33;
+  &:hover {
+    opacity: 0.66;
+  }
+  &:active {
+    opacity: 0.33;
+  }
 }
 
 .boxed {
@@ -121,12 +121,12 @@ a:active {
   font-size: 15px;
   border-bottom: 1px solid;
   font-family: Raleway, Noto Sans JP, Cormorant Infant, Noto Serif JP;
-}
-.button:hover {
-  opacity: 0.66;
-}
-.button:active {
-  opacity: 0.33;
+  &:hover {
+    opacity: 0.66;
+  }
+  &:active {
+    opacity: 0.33;
+  }
 }
 
 @media screen and (max-width: 600px) {

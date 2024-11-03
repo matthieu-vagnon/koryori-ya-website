@@ -68,7 +68,7 @@
   background-color: var(--background-color);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .dual-section {
     flex-direction: column !important;
     height: unset !important;
