@@ -18,8 +18,7 @@ This web application was built using the following tools:
 - React.js
 - TypeScript
 - Vite.js
-- React Router
-- CSS
+- JS/JSX/HTML/CSS
 
 # Run the Project
 

@@ -11,7 +11,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
   color: white;
   align-items: start;
   left: 0;
@@ -47,21 +47,6 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  &::before {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(
-      to bottom right,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(0, 0, 0, 0.3) 50%,
-      rgba(0, 0, 0, 0.3) 100%
-    );
-    z-index: -1;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -71,10 +56,6 @@
 
   .landing-view-title-container {
     max-width: unset;
-  }
-
-  .landing-view-title {
-    font-size: 30px;
   }
 }
 
