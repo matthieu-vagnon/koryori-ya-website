@@ -33,16 +33,14 @@
 }
 
 @font-face {
-  font-family: "Noto Serif";
-  src: url("./assets/fonts/noto-serif-variable.ttf")
-    format("truetype-variations");
+  font-family: "Cormorant Infant";
+  src: url("./assets/fonts/cormorant-infant.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url("./assets/fonts/noto-sans-variable.ttf")
-    format("truetype-variations");
+  font-family: "Raleway";
+  src: url("./assets/fonts/raleway-variable.ttf") format("truetype-variations");
   font-weight: 100 900;
 }
 /* #endregion */
