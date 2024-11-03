@@ -71,7 +71,6 @@ body {
 
 h1 {
   font-family: Cormorant Infant, Noto Serif JP, Raleway, Noto Sans JP;
-  line-height: 1.1;
   font-size: clamp(40px, 50px, 7vmin);
   letter-spacing: 0.2em;
   font-weight: 200;

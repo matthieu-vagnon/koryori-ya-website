@@ -1,23 +1,27 @@
 .landing-view {
   position: relative;
-}
-
-.landing-view-content-container {
-  height: 100%;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .landing-view-content {
   position: absolute;
+  color: white;
+  left: auto;
+  right: auto;
+  top: 50px;
+  bottom: 50px;
+}
+
+.landing-view-boxed-container {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  color: white;
   align-items: start;
-  left: 0;
-  top: 50px;
-  bottom: 50px;
-  width: 100%;
+  position: relative;
 }
 
 .landing-view-logo {
@@ -42,6 +46,28 @@
 
 .landing-view-description {
   font-weight: 200;
+}
+
+.landing-view-access-bt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  border: none;
+  padding: 15px 25px;
+  color: white;
+  cursor: pointer;
+  border-radius: 999px;
+  font-size: 16px;
+  transition: 0.2s opacity ease-in-out;
+  font-family: Raleway, Noto Sans JP, Cormorant Infant, Noto Serif JP;
+  font-weight: 500;
+  &:hover {
+    opacity: 0.66;
+  }
+  &:active {
+    opacity: 0.33;
+  }
 }
 
 .landing-view-carousel {
