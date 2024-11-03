@@ -132,7 +132,7 @@ a {
   transition: all 0.2s ease-in-out;
   font-weight: 300;
   cursor: pointer;
-  font-size: clamp(15px, 20px, 4vmin);
+  font-size: clamp(15px, 18px, 4vmin);
   border-bottom: 1px solid;
   font-family: Raleway, Noto Sans JP, Cormorant Infant, Noto Serif JP;
   &:hover {

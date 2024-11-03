@@ -16,8 +16,10 @@ export default function LandingView(props: LandingViewProps) {
         <div className="landing-view-content-container">
           <div className="landing-view-content boxed">
             <div className="landing-view-title-container">
-              <h1 className="landing-view-title">{mainTitle}</h1>
-              <p className="landing-view-description">{subTitle}</p>
+              <h1 className="landing-view-text">{mainTitle}</h1>
+              <p className="landing-view-text landing-view-description">
+                {subTitle}
+              </p>
             </div>
           </div>
         </div>
