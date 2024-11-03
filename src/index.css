@@ -48,7 +48,7 @@
 
 :root {
   font-family: "Noto Sans JP", "Raleway", sans-serif;
-  font-size: clamp(14px, 18px, 3vmin);
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -83,7 +83,7 @@ h2 {
 
 h6 {
   font-family: "Noto Serif JP", "Cormorant Infant", serif;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -93,7 +93,6 @@ h6 {
 a {
   text-decoration: none;
   color: unset;
-  transition: opacity 0.2s ease-in-out;
   &:hover {
     opacity: 0.66;
   }
@@ -102,8 +101,13 @@ a {
   }
 }
 
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .pp {
-  font-size: clamp(20px, 30px, 5vmin);
+  font-size: clamp(20px, 25px, 5vmin);
   font-family: "Noto Serif", "Noto Serif JP", serif;
   letter-spacing: 0.2em;
   font-weight: 200;
@@ -128,9 +132,7 @@ a {
   transition: all 0.2s ease-in-out;
   font-weight: 300;
   cursor: pointer;
-  font-size: clamp(15px, 18px, 4vmin);
   border-bottom: 1px solid;
-  font-family: "Noto Sans JP", "Raleway", sans-serif;
   &:hover {
     opacity: 0.66;
   }
@@ -140,6 +142,10 @@ a {
 }
 
 @media screen and (max-width: 650px) {
+  :root {
+    font-size: 14px;
+  }
+
   .boxed {
     padding-left: 50px;
     padding-right: 50px;
