@@ -54,13 +54,18 @@
   right: 0;
   background-color: black;
   border: none;
-  padding: 15px 25px;
+  padding: 10px 25px;
   color: white;
+  fill: white;
   cursor: pointer;
   border-radius: 999px;
   font-size: 16px;
   transition: 0.2s opacity ease-in-out;
-  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   font-weight: 500;
   &:hover {
     opacity: 0.66;

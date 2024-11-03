@@ -21,7 +21,6 @@
   src: url("./assets/fonts/noto-serif-jp-variable.ttf")
     format("truetype-variations");
   font-weight: 100 900;
-  font-style: normal;
   unicode-range: U+3000-9FFF, U+ff??;
 }
 
@@ -30,7 +29,6 @@
   src: url("./assets/fonts/noto-sans-jp-variable.ttf")
     format("truetype-variations");
   font-weight: 100 900;
-  font-style: normal;
   unicode-range: U+3000-9FFF, U+ff??;
 }
 
@@ -39,8 +37,6 @@
   src: url("./assets/fonts/noto-serif-variable.ttf")
     format("truetype-variations");
   font-weight: 400;
-  font-style: normal;
-  unicode-range: U+000-5FF;
 }
 
 @font-face {
@@ -48,13 +44,11 @@
   src: url("./assets/fonts/noto-sans-variable.ttf")
     format("truetype-variations");
   font-weight: 100 900;
-  font-style: normal;
-  unicode-range: U+000-5FF;
 }
 /* #endregion */
 
 :root {
-  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Raleway", sans-serif;
   font-size: clamp(14px, 18px, 3vmin);
   line-height: 1.5;
   font-weight: 400;
@@ -74,8 +68,7 @@ body {
 }
 
 h1 {
-  /* font-family: Cormorant Infant, Noto Serif, Raleway, Noto Sans JP, serif; */
-  font-family: "Noto Serif", "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Cormorant Infant", serif;
   font-size: clamp(40px, 50px, 7vmin);
   letter-spacing: 0.2em;
   font-weight: 200;
@@ -83,14 +76,14 @@ h1 {
 }
 
 h2 {
-  font-family: "Noto Serif", "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Cormorant Infant", serif;
   font-size: clamp(35px, 40px, 6vmin);
   font-weight: 400;
   line-height: 1.5em;
 }
 
 h6 {
-  font-family: "Noto Serif", "Noto Serif JP", serif;
+  font-family: "Noto Serif JP", "Cormorant Infant", serif;
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -138,7 +131,7 @@ a {
   cursor: pointer;
   font-size: clamp(15px, 18px, 4vmin);
   border-bottom: 1px solid;
-  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Raleway", sans-serif;
   &:hover {
     opacity: 0.66;
   }
