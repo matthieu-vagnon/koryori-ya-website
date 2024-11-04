@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Package from "../package.json";
 import "./App.css";
 import japan from "./assets/images/japan.jpg";
 import newYork from "./assets/images/new-york.jpg";
@@ -53,7 +54,7 @@ function App() {
           <span>
             Made by{" "}
             <a href="https://www.mvagnon.dev" target="_blank" rel="noreferrer">
-              Matthieu Vagnon
+              {Package.author}
             </a>
           </span>
         }
