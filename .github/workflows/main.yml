@@ -2,7 +2,7 @@ name: 🚀 Shipping Build
 on:
   push:
     branches:
-      - main
+      - demo
 jobs:
   FTP-Deploy-Action:
     name: 🎉 Deploy
