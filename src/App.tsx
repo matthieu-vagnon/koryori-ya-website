@@ -27,14 +27,14 @@ function App() {
       <SectionSeparator start="primary" end="secondary" />
       <DualSection
         title="Concept"
-        description="アヘャラヌアミ樹差樹擢ほも尾都津れし、やけうより、露等課夜、けてなくつやょ。"
+        description="体と心にやさしい創作料理を。"
         img={{ src: japan, alt: "Japan Image" }}
         background="secondary"
       />
       <SectionSeparator start="secondary" end="primary" />
       <DualSection
         title="Access"
-        description="アヘャラヌアミ樹差樹擢ほも尾都津れし、やけうより、露等課夜、けてなくつやょ。"
+        description="世界遺産姫路城がそびえ立つ城下町にひっそりと。"
         img={{ src: paris, alt: "Paris Image" }}
         background="primary"
         mirror
