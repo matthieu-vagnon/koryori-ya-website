@@ -48,34 +48,6 @@ function App() {
             src: newYork,
             description: "New-York image",
           },
-          {
-            src: newYork,
-            description: "New-York image",
-          },
-          {
-            src: newYork,
-            description: "New-York image",
-          },
-          {
-            src: newYork,
-            description: "New-York image",
-          },
-          {
-            src: newYork,
-            description: "New-York image",
-          },
-          {
-            src: newYork,
-            description: "New-York image",
-          },
-          {
-            src: newYork,
-            description: "New-York image",
-          },
-          {
-            src: newYork,
-            description: "New-York image",
-          },
         ]}
         background="primary"
       />

@@ -94,16 +94,16 @@ export default function ImageGallery(props: ImageGalleryProps) {
                   />
                 </button>
               ))}
-              {images.length > 4 && (
-                <button
-                  className="button img-gallery-more-switch-bt"
-                  onClick={() => setExpanded((prevState) => !prevState)}
-                >
-                  {expanded ? "Show Less" : "Show More"}
-                </button>
-              )}
             </div>
           </div>
+          {images.length > 4 && (
+            <button
+              className="button img-gallery-more-switch-bt"
+              onClick={() => setExpanded((prevState) => !prevState)}
+            >
+              {expanded ? "Show Less" : "Show More"}
+            </button>
+          )}
         </div>
       </div>
     </React.Fragment>
