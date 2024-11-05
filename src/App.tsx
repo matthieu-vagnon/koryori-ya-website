@@ -1,4 +1,4 @@
-import { Map, Marker } from "pigeon-maps";
+import { Map, Marker, ZoomControl } from "pigeon-maps";
 import React, { useEffect } from "react";
 import Package from "../package.json";
 import "./App.css";
@@ -52,7 +52,9 @@ function App() {
             defaultZoom={18}
             minZoom={15}
             maxZoom={19}
+            metaWheelZoom
           >
+            <ZoomControl />
             <Marker
               width={50}
               anchor={[34.83258027024389, 134.68785965398067]}
