@@ -13,9 +13,21 @@ interface DualSectionProps {
 export default function DualSection(props: DualSectionProps) {
   const { title, description, img, background, mirror, children } = props;
   const [open, setOpen] = useState(false);
+  const [contentHeight, setContentHeight] = useState(0);
 
-  const handleExpand = () => {
-    setOpen((prevState) => !prevState);
+  const handleContentVisibilitySwitch = () => {
+    const dsChildrenEl = document.querySelector(".dual-section-children");
+
+    if (dsChildrenEl) {
+      setOpen((prevState) => {
+        if (prevState === false) {
+          setContentHeight(dsChildrenEl.scrollHeight);
+        } else {
+          setContentHeight(0);
+        }
+        return !prevState;
+      });
+    }
   };
 
   return (
@@ -39,7 +51,7 @@ export default function DualSection(props: DualSectionProps) {
               {children && (
                 <button
                   className="button dual-section-button"
-                  onClick={handleExpand}
+                  onClick={handleContentVisibilitySwitch}
                 >
                   {open ? "Close" : "Read More"}
                 </button>
@@ -47,9 +59,14 @@ export default function DualSection(props: DualSectionProps) {
             </div>
           </div>
         </div>
-        {children && open && (
-          <div className="dual-section-children boxed">
-            <h3>Content</h3>
+        {children && (
+          <div
+            className="dual-section-children-container boxed"
+            style={{
+              height: contentHeight,
+            }}
+          >
+            <div className="dual-section-children">Test</div>
           </div>
         )}
       </div>

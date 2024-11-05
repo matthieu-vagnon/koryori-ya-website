@@ -72,7 +72,15 @@
   background-color: var(--background-color);
 }
 
+.dual-section-children-container {
+  width: 100%;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+}
+
 .dual-section-children {
+  padding-top: 25px;
+  padding-bottom: 25px;
   width: 100%;
 }
 
