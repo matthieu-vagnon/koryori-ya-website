@@ -79,7 +79,6 @@ function App() {
           </p>
           <div className="access-map-container">
             <Map
-              height={600}
               defaultCenter={[34.83258027024389, 134.68785965398067]}
               defaultZoom={18}
               minZoom={15}
