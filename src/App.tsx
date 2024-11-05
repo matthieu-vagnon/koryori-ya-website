@@ -7,6 +7,7 @@ import newYork from "./assets/images/new-york.jpg";
 import paris from "./assets/images/paris.jpg";
 import DualSection from "./components/DualSection/DualSection";
 import Footer from "./components/Footer/Footer";
+import ImageGallery from "./components/ImageGallery/ImageGallery";
 import LandingView from "./components/LandingView/LandingView";
 import SectionSeparator from "./components/SectionSeparator/SectionSeparator";
 import { useTitle } from "./contexts/TitleContext";
@@ -33,11 +34,57 @@ function App() {
         background="secondary"
       />
       <SectionSeparator start="secondary" end="primary" />
+      <ImageGallery
+        images={[
+          {
+            src: japan,
+            description: "Japan image",
+          },
+          {
+            src: paris,
+            description: "Paris image",
+          },
+          {
+            src: newYork,
+            description: "New-York image",
+          },
+          {
+            src: newYork,
+            description: "New-York image",
+          },
+          {
+            src: newYork,
+            description: "New-York image",
+          },
+          {
+            src: newYork,
+            description: "New-York image",
+          },
+          {
+            src: newYork,
+            description: "New-York image",
+          },
+          {
+            src: newYork,
+            description: "New-York image",
+          },
+          {
+            src: newYork,
+            description: "New-York image",
+          },
+          {
+            src: newYork,
+            description: "New-York image",
+          },
+        ]}
+        background="primary"
+      />
+      <SectionSeparator start="primary" end="secondary" />
       <DualSection
         title="Access"
         description="世界遺産姫路城がそびえ立つ城下町にひっそりと。"
         img={{ src: paris, alt: "Paris Image" }}
-        background="primary"
+        background="secondary"
         mirror
       >
         <p className="access-intro">
@@ -47,7 +94,7 @@ function App() {
         </p>
         <div className="access-map-container">
           <Map
-            height={500}
+            height={600}
             defaultCenter={[34.83258027024389, 134.68785965398067]}
             defaultZoom={18}
             minZoom={15}
@@ -62,7 +109,7 @@ function App() {
           </Map>
         </div>
       </DualSection>
-      <SectionSeparator start="primary" end="tertiary" />
+      <SectionSeparator start="secondary" end="tertiary" />
       <Footer
         access={
           <span>

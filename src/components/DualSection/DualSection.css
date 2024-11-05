@@ -5,6 +5,9 @@
   align-items: center;
   background-color: var(--background-color);
   color: var(--color);
+  width: 100%;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
 }
 
 .dual-section-container {
@@ -60,7 +63,7 @@
 
 .dual-section-description {
   text-align: start;
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
   display: flex;
   justify-content: center;
   height: 100%;
@@ -70,12 +73,6 @@
   border-color: var(--color);
   color: var(--color);
   background-color: var(--background-color);
-}
-
-.dual-section-children-container {
-  width: 100%;
-  overflow: hidden;
-  transition: height 0.2s ease-in-out;
 }
 
 .dual-section-children {
