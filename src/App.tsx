@@ -1,3 +1,4 @@
+import { Map, Marker } from "pigeon-maps";
 import React, { useEffect } from "react";
 import Package from "../package.json";
 import "./App.css";
@@ -39,7 +40,25 @@ function App() {
         background="primary"
         mirror
       >
-        <div>Test</div>
+        <p className="access-intro">
+          〒670-0017 兵庫県姫路市福中町3番地小寺ビル１階
+          <br />
+          Tel.: <a href="tel:070-9055-5210">070-9055-5210</a>
+        </p>
+        <div className="access-map-container">
+          <Map
+            height={500}
+            defaultCenter={[34.83258027024389, 134.68785965398067]}
+            defaultZoom={18}
+            minZoom={15}
+            maxZoom={19}
+          >
+            <Marker
+              width={50}
+              anchor={[34.83258027024389, 134.68785965398067]}
+            />
+          </Map>
+        </div>
       </DualSection>
       <SectionSeparator start="primary" end="tertiary" />
       <Footer

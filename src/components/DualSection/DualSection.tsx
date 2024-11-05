@@ -66,7 +66,7 @@ export default function DualSection(props: DualSectionProps) {
               height: contentHeight,
             }}
           >
-            <div className="dual-section-children">Test</div>
+            <div className="dual-section-children">{children}</div>
           </div>
         )}
       </div>

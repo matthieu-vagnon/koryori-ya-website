@@ -1,0 +1,10 @@
+.access-intro {
+  text-align: left;
+  width: 100%;
+}
+
+.access-map-container {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+}
