@@ -10,13 +10,22 @@ export default function ImageGallery(props: ImageGalleryProps) {
   const { images, background } = props;
   const [activeImg, setActiveImg] = useState(0);
   const [expanded, setExpanded] = useState(false);
-  const [contentHeight, setContentHeight] = useState(0);
+  const [activeImgHeight, setActiveImgHeight] = useState(0);
+  const [imgsHeight, setImgsHeight] = useState(0);
+
+  const updateActiveImgHeight = () => {
+    const activeImg = document.querySelector(".img-gallery-active-img");
+
+    if (activeImg) {
+      setActiveImgHeight(activeImg.scrollHeight);
+    }
+  };
 
   const updateImgsHeight = () => {
-    const imgsHeight = document.querySelector(".img-gallery-imgs");
+    const imgs = document.querySelector(".img-gallery-imgs");
 
-    if (imgsHeight) {
-      setContentHeight(imgsHeight.clientHeight);
+    if (imgs) {
+      setImgsHeight(imgs.scrollHeight);
     }
   };
 
@@ -25,9 +34,17 @@ export default function ImageGallery(props: ImageGalleryProps) {
   }, [expanded]);
 
   useEffect(() => {
+    const activeImg = document.querySelector(".img-gallery-active-img");
+
+    activeImg?.addEventListener("load", updateActiveImgHeight);
+
+    window.addEventListener("resize", updateActiveImgHeight);
     window.addEventListener("resize", updateImgsHeight);
 
     return () => {
+      activeImg?.removeEventListener("load", updateActiveImgHeight);
+
+      window.removeEventListener("resize", updateActiveImgHeight);
       window.removeEventListener("resize", updateImgsHeight);
     };
   }, []);
@@ -38,7 +55,12 @@ export default function ImageGallery(props: ImageGalleryProps) {
         <div className="img-gallery boxed">
           <div className="img-gallery-showcase">
             <h2>Gallery</h2>
-            <div className="img-gallery-active-img-container">
+            <div
+              className="img-gallery-active-img-container"
+              style={{
+                height: activeImgHeight,
+              }}
+            >
               <img
                 className="img-gallery-active-img"
                 src={images[activeImg].src}
@@ -52,7 +74,7 @@ export default function ImageGallery(props: ImageGalleryProps) {
           <div
             className="img-gallery-imgs-container"
             style={{
-              height: contentHeight,
+              height: imgsHeight,
             }}
           >
             <div className="img-gallery-imgs">
