@@ -32,7 +32,10 @@ export default function DualSection(props: DualSectionProps) {
 
   return (
     <React.Fragment>
-      <div className={`dual-section-children-container ${background}`}>
+      <div
+        id={title.toLowerCase()}
+        className={`dual-section-children-container ${background}`}
+      >
         <div className="dual-section-container full-screen-container">
           <div
             className="dual-section boxed"

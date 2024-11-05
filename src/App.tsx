@@ -62,7 +62,15 @@ function App() {
       </DualSection>
       <SectionSeparator start="primary" end="tertiary" />
       <Footer
-        access={`Adress, other informations\nBla, bla, bla...\nBla, bla, bla, bla...`}
+        access={
+          <span>
+            〒670-0017
+            <br />
+            兵庫県姫路市福中町3番地小寺ビル１階
+            <br />
+            Tel.: <a href="tel:070-9055-5210">070-9055-5210</a>
+          </span>
+        }
         socials={[
           {
             title: "Instagram",

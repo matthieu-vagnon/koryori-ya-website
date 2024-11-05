@@ -4,7 +4,7 @@ import { Variant } from "../../shared/types/Variant";
 import "./Footer.css";
 
 interface FooterProps {
-  access: string;
+  access: ReactNode;
   socials: Array<{ title: string; url: string }>;
   about: ReactNode;
   background: Variant;
