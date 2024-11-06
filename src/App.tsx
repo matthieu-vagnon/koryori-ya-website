@@ -28,14 +28,14 @@ function App() {
           subTitle="アヘャラヌアミ樹差樹擢ほも尾都津れし、やけうより、露等課夜、けてなくつやょ。以尾ほくや氏無らこふのつちまゆヨトフオヒョテま素差はせこしね素名そロンエカルかむせえ「や課雲みほゃ」。ろニヌアナコリ氏瀬他名区、えなろうよな区根模擢。いく譜露。"
           carouselImages={[japan, paris, newYork]}
         />
-        <SectionSeparator start="primary" end="secondary" />
+        <SectionSeparator start="secondary" end="primary" />
         <DualSection
           title="Concept"
           description="体と心にやさしい創作料理を。"
           img={{ src: japan, alt: "Japan Image" }}
-          background="secondary"
+          background="primary"
         />
-        <SectionSeparator start="secondary" end="primary" />
+        <SectionSeparator start="primary" end="secondary" />
         <ImageGallery
           images={[
             {
@@ -51,14 +51,14 @@ function App() {
               description: "New-York image",
             },
           ]}
-          background="primary"
+          background="secondary"
         />
-        <SectionSeparator start="primary" end="secondary" />
+        <SectionSeparator start="secondary" end="primary" />
         <DualSection
           title="Access"
           description="世界遺産姫路城がそびえ立つ城下町にひっそりと。"
           img={{ src: paris, alt: "Paris Image" }}
-          background="secondary"
+          background="primary"
           mirror
         >
           <p className="access-intro">
@@ -82,7 +82,7 @@ function App() {
             </Map>
           </div>
         </DualSection>
-        <SectionSeparator start="secondary" end="tertiary" />
+        <SectionSeparator start="primary" end="tertiary" />
         <Footer
           access={
             <span>
