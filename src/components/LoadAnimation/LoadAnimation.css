@@ -87,11 +87,9 @@
 #object {
   width: 200px;
   height: 200px;
-  background-image: url(https://reech.ca/wp-content/uploads/2017/09/reech-logo-no-text.svg);
-  background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0;
+  margin-top: -25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +119,7 @@
 /*********loader line******************/
 #loader {
   position: absolute;
-  top: 125%;
+  top: 100%;
   left: 50%;
   margin-left: -50px;
   width: 100px;

@@ -10,7 +10,7 @@ export default function LoadAnimation(props: LoadAnimationProps) {
   const { children } = props;
 
   const onPageLoad = () => {
-    setLoaded(true);
+    setLoaded(false);
   };
 
   const editClassName = (element: HTMLElement, className: string) => {
