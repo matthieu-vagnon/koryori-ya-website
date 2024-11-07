@@ -1,13 +1,9 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.jpg";
 import "./LoadAnimation.css";
 
-interface LoadAnimationProps {
-  children: ReactNode;
-}
-export default function LoadAnimation(props: LoadAnimationProps) {
+export default function LoadAnimation() {
   const [loaded, setLoaded] = useState(false);
-  const { children } = props;
 
   const onPageLoad = () => {
     setLoaded(true);
@@ -82,16 +78,6 @@ export default function LoadAnimation(props: LoadAnimationProps) {
           </div>
         </div>
       </div>
-
-      <div className="res-container">
-        <div className="res-row">
-          <div id="block-1">
-            <div id="block-2"></div>
-          </div>
-        </div>
-      </div>
-
-      {children}
     </React.Fragment>
   );
 }
