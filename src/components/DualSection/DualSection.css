@@ -97,6 +97,7 @@
 
   .dual-section-image {
     height: 25%;
+    border-radius: 0;
   }
 
   .dual-section-content {
