@@ -47,6 +47,12 @@ export default function DualSection(props: DualSectionProps) {
               className="dual-section-element dual-section-image"
               src={img.src}
               alt={img.alt}
+              style={{
+                borderTopRightRadius: mirror ? 0 : "5px",
+                borderBottomRightRadius: mirror ? 0 : "5px",
+                borderTopLeftRadius: mirror ? "5px" : 0,
+                borderBottomLeftRadius: mirror ? "5px" : 0,
+              }}
             />
             <div className="dual-section-element dual-section-content">
               <h2 className="dual-section-title">{title}</h2>

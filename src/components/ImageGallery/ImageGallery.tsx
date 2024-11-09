@@ -34,7 +34,7 @@ export default function ImageGallery(props: ImageGalleryProps) {
   }, [expanded]);
 
   useEffect(() => {
-    const activeImg = document.querySelector(".img-gallery-active-img");
+    const activeImg = document.querySelector(".img-gallery-active-img-element");
 
     activeImg?.addEventListener("load", updateActiveImgHeight);
 
@@ -61,11 +61,13 @@ export default function ImageGallery(props: ImageGalleryProps) {
                 height: activeImgHeight,
               }}
             >
-              <img
-                className="img-gallery-active-img"
-                src={images[activeImg].src}
-                alt={images[activeImg].description}
-              />
+              <div className="img-gallery-active-img">
+                <img
+                  className="img-gallery-active-img-element"
+                  src={images[activeImg].src}
+                  alt={images[activeImg].description}
+                />
+              </div>
             </div>
             <span className="img-gallery-active-desc">
               {images[activeImg].description}
