@@ -79,10 +79,6 @@ function App() {
           {
             src: img9415,
             description: ''
-          },
-          {
-            src: img9415,
-            description: ''
           }
         ]}
         background='secondary'
