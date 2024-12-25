@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { Map, Marker, ZoomControl } from 'pigeon-maps'
 import React, { useEffect } from 'react'
 import Package from '../package.json'
@@ -136,6 +137,7 @@ function App() {
         }
         background='tertiary'
       />
+      <SpeedInsights />
     </React.Fragment>
   )
 }
