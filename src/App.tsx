@@ -31,7 +31,7 @@ function App() {
     <React.Fragment>
       <LoadAnimation />
       <LandingView
-        mainTitle='『Koryori-ya  尾崎』'
+        mainTitle='Koryori-ya  尾崎'
         subTitle='木瓜(ボケ)の花をモチーフにした丸に四方木瓜の家紋がお出迎えします春になると桜の蕾が膨らみ花が咲き白鷺城の周辺は賑やかになりますが…杪冬の頃いち早く春のおとずれを知らせてくれるのが紅の色した愛嬌のある木瓜(ボケ)の花花言葉は『情熱』四季を通して春のおとずれのような暖かいゆるりとした空間でお待ちしております'
         carouselImages={[img9517, img9518, img9415]}
       />
