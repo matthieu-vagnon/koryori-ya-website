@@ -70,7 +70,7 @@ body {
 
 h1 {
   font-family: 'Noto Serif JP', 'Cormorant Infant', serif;
-  font-size: clamp(35px, 45px, 7vmin);
+  font-size: clamp(33px, 45px, 7vmin);
   letter-spacing: 0.2em;
   font-weight: 200;
   line-height: 1.5em;
