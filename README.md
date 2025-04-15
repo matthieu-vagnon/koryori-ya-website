@@ -1,53 +1,79 @@
-# Table of Contents
+- [Koryori Ya Ozaki](#koryori-ya-ozaki)
+  - [💻 Gallery](#-gallery)
+  - [🚀 Features](#-features)
+  - [🛠️ Installation](#️-installation)
+    - [Prerequisites](#prerequisites)
+    - [Set Up Local Repository](#set-up-local-repository)
+    - [Run the App](#run-the-app)
+  - [🔧 Available Scripts](#-available-scripts)
+  - [📦 Project Structure](#-project-structure)
+  - [👨‍💻 Author](#-author)
 
-- [Table of Contents](#table-of-contents)
-- [Project Informations](#project-informations)
-  - [Tech Stack](#tech-stack)
-- [Run the Project](#run-the-project)
-  - [Dependencies Install/Update](#dependencies-installupdate)
-  - [Run the Application](#run-the-application)
-- [Deployment](#deployment)
-  - [Build the Application](#build-the-application)
+# Koryori Ya Ozaki
 
-# Project Informations
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![React](https://img.shields.io/badge/React-18.3.1-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
-## Tech Stack
+Website for a japanese restaurant built with Vite.js along with React. The web app is deployed on Vercel.
 
-This web application was built using the following tools:
+## 💻 Gallery
 
-- React.js
-- TypeScript
-- Vite.js
-- JS/JSX/HTML/CSS
+Further explaination of the project as well as images from the software are available [here](https://www.mvagnon.dev/case-studies/koryori-ya).
 
-# Run the Project
+## 🚀 Features
 
-## Dependencies Install/Update
+- **Modern Interface** - Responsive design made with CSS
+- **Accessibility** - Accessible hand-made components
+- **Animations** - Smooth CSS animations and transitions
+- **Performance** - Optimized performances thanks to few external libraries usage
 
-Run the following command:
+## 🛠️ Installation
 
-```
-npm install
-```
+### Prerequisites
 
-## Run the Application
+- Node.js 18.x or higher
+- npm or yarn
 
-Run the following command:
+### Set Up Local Repository
 
-```
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/matthieu-vagnon/koryori-ya-website.git
+   cd koryori-ya-website
+   ```
+
+2. Install dependencies
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Run the App
+
+Run the development server:
+
+```bash
 npm run dev
+# or
+yarn dev
 ```
 
-The application will be available at [localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-# Deployment
+## 🔧 Available Scripts
 
-## Build the Application
+- `npm run dev` - Starts the development server with Turbopack
+- `npm run build` - Builds the application for production
+- `npm run lint` - Runs ESLint to check code quality
 
-Run the following command:
+## 📦 Project Structure
 
-```
-npm run build
-```
+This is a [React](https://react.dev/) project bootstrapped with Vite.js's [`create-vite`](https://vite.dev/guide/).
 
-The exported application will be available in the `dist/` folder.
+## 👨‍💻 Author
+
+- [Matthieu Vagnon](https://mvagnon.dev)
