@@ -1,34 +1,39 @@
 - [Koryori Ya Ozaki](#koryori-ya-ozaki)
-  - [💻 Gallery](#-gallery)
-  - [🚀 Features](#-features)
-  - [🛠️ Installation](#️-installation)
+  - [Type of Project](#type-of-project)
+  - [Features](#features)
+  - [Dependencies](#dependencies)
+  - [Installation](#installation)
     - [Prerequisites](#prerequisites)
     - [Set Up Local Repository](#set-up-local-repository)
     - [Run the App](#run-the-app)
-  - [🔧 Available Scripts](#-available-scripts)
-  - [📦 Project Structure](#-project-structure)
-  - [👨‍💻 Author](#-author)
+  - [Available Scripts](#available-scripts)
+  - [Author](#author)
 
 # Koryori Ya Ozaki
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![React](https://img.shields.io/badge/React-18.3.1-blue)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
-Website for a japanese restaurant built with Vite.js along with React. The web app is deployed on Vercel.
+_Website for a japanese restaurant built with Vite.js along with React. The web app is deployed on Vercel._
 
-## 💻 Gallery
+## Type of Project
 
-Further explaination of the project as well as images from the software are available [here](https://www.mvagnon.dev/case-studies/koryori-ya).
+- [x] Freelance project
+- [ ] Hobby project
+- [ ] Other project
 
-## 🚀 Features
+## Features
 
 - **Modern Interface** - Responsive design made with CSS
 - **Accessibility** - Accessible hand-made components
 - **Animations** - Smooth CSS animations and transitions
 - **Performance** - Optimized performances thanks to few external libraries usage
 
-## 🛠️ Installation
+## Dependencies
+
+- [ESLint](https://eslint.org) for code linting
+
+## Installation
 
 ### Prerequisites
 
@@ -64,16 +69,12 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## 🔧 Available Scripts
+## Available Scripts
 
 - `npm run dev` - Starts the development server with Turbopack
 - `npm run build` - Builds the application for production
 - `npm run lint` - Runs ESLint to check code quality
 
-## 📦 Project Structure
-
-This is a [React](https://react.dev/) project bootstrapped with Vite.js's [`create-vite`](https://vite.dev/guide/).
-
-## 👨‍💻 Author
+## Author
 
 - [Matthieu Vagnon](https://mvagnon.dev)
